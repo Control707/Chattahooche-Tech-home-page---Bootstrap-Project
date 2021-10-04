@@ -1,0 +1,294 @@
+
+*{
+    
+    font-family: 'Crimson Text', serif;
+    color: #112D4E;
+}
+
+body, html {
+
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+   
+  }
+  
+
+.announce, .announce *{
+    background-color: #DBE2EF;
+    font-family: 'Montserrat', sans-serif;
+    color: #112D4E;
+    font-weight: 600;
+    
+}
+.announce-text a{
+    text-decoration: underline;
+    font-family: 'Crimson Text', serif;
+    color: #112D4E;
+}
+
+
+
+.form-control:focus, .form-control:active {
+    border-color: #000;
+    outline: 0;
+    box-shadow: inset 0 0 0;
+}
+
+.nav-top *{
+    font-family: 'Montserrat', sans-serif;
+    color: #3F72AF;
+   font-weight:600;
+   font-size: 0.90rem;
+}
+
+
+.navbar-brand img{
+    width:48vw;
+    max-width: 335px;
+}
+
+#navbarbottom *{
+    font-family: 'Crimson Text', serif;
+    color: #112D4E;
+    font-size: 1.45rem;
+    font-weight: 300;
+   
+}
+
+#navbarbottom a:hover{
+   text-decoration: overline #3F72AF;
+   color: #3F72AF;
+    
+
+}
+
+.dropdown-menu{
+    background-color: #F9F7F7;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .hero-image {
+    
+    background-image:  url("images/HomeHero-mobile.jpeg");
+    height:70vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-image a:hover {
+    
+    color:#F9F7F7;
+    text-decoration: none;
+  }
+
+  .hero-text {
+    text-align:start;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color:#F9F7F7;
+    
+    font-size: 5vmin;
+    font-weight: 500;
+    max-width: 50vw;;
+  }
+  
+  .hero-text button {
+    border: 1px;
+    outline: 1;
+    display: inline-block;
+    padding: 10px 25px;
+    color:#F9F7F7;
+    background-color:#112D4E;
+    text-align:center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color:#3F72AF;
+    color:#F9F7F7;
+  }
+
+  .title1{
+      font-family: 'Crimson Text', serif;
+      font-weight: 700;
+    
+  }
+
+ 
+  .secondry-text{
+      color: #3F72AF;
+      
+      font-size: 3.7vmin;
+     
+  }
+
+  
+
+  
+
+  .img-text{
+      color: white;
+      font-size: 3.5vmin 10px
+    
+      
+  }
+  
+
+  .img-hover-zoom {
+     /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.1);
+  }
+
+
+
+.Portrait-card a:hover{
+    text-decoration: none;
+    
+}
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    }
+
+.btn-color{
+    background-color: #112D4E;
+    color: #F9F7F7;
+}
+
+.btn-color:hover{
+    
+        background-color:#3F72AF;
+        color:#F9F7F7;
+      
+}
+
+.events{
+    background-color:#DBE2EF;
+
+}
+
+.academics{
+    background-color:#3F72AF;
+}
+
+.news .card{
+min-height: 61vh;
+background-color:#112D4E;
+}
+
+.news .card .card-title{
+    color:#F9F7F7;
+    font-size: 3.5vmin 10px
+}
+
+.card-img{
+    width: 100%;
+    min-height: 62vh;
+    object-fit: cover;
+}
+
+
+.title2{
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    color:#F9F7F7;
+}
+.third-text{
+    color: #F9F7F7;
+    font-size: 3.7vmin;
+}
+.academics a:hover{
+    text-decoration: none;
+}
+.academics .card{min-height:70vh;}
+
+.academics .btn-color:hover{
+    color:#112D4E ;
+    background-color: #F9F7F7;
+}
+
+.bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/hero.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .bg-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.5vmin 10px
+    
+  }
+
+  .pres{
+      max-height: 20vmax;
+  }
+
+  .resources{
+      background-color: #112D4E;
+      
+  } 
+  .resources p{
+      color:#F9F7F7;
+      font-size: 1 rem;
+    font-family:'Montserrat', sans-serif ;}
+
+    .resources a{
+        color:#F9F7F7;
+        font-size: 1 rem;
+      font-family:'Montserrat', sans-serif ;}
+  
+
+  
+
+  .resources a:hover{
+      text-decoration:underline;
+      color:#F9F7F7;
+  }
+  .resources .lead{
+      text-decoration: underline;
+      font-family: 'Crimson Text', serif;
+      font-weight: 600;
+
+  }
+  .connect{
+      background-color: #3F72AF;
+      color: #F9F7F7;
+      font-size: 2rem;
+  }
+
+  .table{
+      background-color: #112D4E;
+      color: #F9F7F7;
+  }
+  .table table,tbody,thead,th,td{
+     color: #F9F7F7;
+     border: 1px solid white;
+   }

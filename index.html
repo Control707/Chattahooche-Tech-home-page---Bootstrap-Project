@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chattahoochee Technical College</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/cropped-CTC-Logo_site-icon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- announcement -->
+    <div class="navbar announce py-3">
+      <div class="container">
+        <div class="h6"><strong>COVID-19 Information</strong></div>
+      </div>
+      <div class="container announce-text lead">
+        <a href="https://www.chattahoocheetech.edu/coronavirus/"
+          >Visit our COVID-19 page for campus updates and resources.</a
+        >
+      </div>
+    </div>
+    <!-- full navbar -->
+    <nav class="navbar navbar-expand-lg nav-top">
+      <div class="container mt-3">
+        <a class="navbar-brand" href="https://www.chattahoocheetech.edu/"
+          ><img
+            class=""
+            src="/images/Chattahoochee-Tech-logo.png"
+            alt="chattahoocheetech logo"
+        /></a>
+        <!-- nav btns -->
+        <button
+          class="navbar-toggler p-1 ml-auto"
+          onclick="toggler('searchul');"
+        >
+          <span class="nav-link bi bi-search"> Search</span>
+        </button>
+
+        <button
+          class="navbar-toggler p-1"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bi bi-list"> Menu</span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse flex-lg-column"
+          id="navbarSupportedContent"
+        >
+          <!-- top navbar -->
+          <ul class="navbar-nav ml-auto flex-row">
+            <li class="nav-item active ml-3 mx-lg-3">
+              <a
+                class="nav-link"
+                href="https://scheduling.chattahoocheetech.edu/MasterCalendar/MasterCalendar.aspx"
+                >CALENDAR <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item ml-3 mx-lg-3">
+              <a
+                class="nav-link"
+                href="https://www.chattahoocheetech.edu/ways-to-give-ct-foundation/"
+                >GIVE</a
+              >
+            </li>
+
+            <li class="nav-item ml-3 mx-lg-3">
+              <a
+                class="nav-link"
+                href="https://www.chattahoocheetech.edu/author/amashburn/"
+                >NEWS</a
+              >
+            </li>
+            <li class="nav-item ml-3 mx-lg-3">
+              <a
+                class="nav-link"
+                href="https://www.chattahoocheetech.edu/college-directory/"
+                >DIRECTORY</a
+              >
+            </li>
+
+            <li class="nav-item ml-3 mx-lg-3">
+              <a
+                id="navsearch"
+                onclick="toggler('searchul');"
+                href="#"
+                class="nav-link"
+              >
+                SEARCH
+              </a>
+            </li>
+          </ul>
+
+          <!-- bottom nav -->
+          <ul class="navbar-nav flex-xl-row ml-auto" id="navbarbottom">
+            <li class="nav-item dropdown ml-2 mt-2">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About Chat Tech
+              </a>
+              <div
+                class="dropdown-menu mt-0 border-0"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/foundation/">Foundation</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/board-of-trustees/">Board of Trustees</a>
+
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/contact-our-staff/">Contact Our Staff</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/faculty-and-staff-conference-grant/">Faculty and Staff Conference Grant</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/spark-workforce-development-award/">Spark – Workforce Development Award</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/student-grants/">Student Grants</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/student-scholarships/">Student Scholarships</a>
+
+
+              </div>
+            </li>
+            <li class="nav-item dropdown ml-2 mt-2">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown2"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Academics
+              </a>
+              <div
+                class="dropdown-menu mt-0 border-0"
+                aria-labelledby="navbarDropdown"
+              >
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/adult-education/">Adult Education</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/arts-studies/">Arts &amp; Sciences</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/business-and-professional-studies/">Business and Professional Services</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/computer-information-systems-technology/">Computers &amp; Engineering</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/digital-media-technologies-studies/">Digital Media Technologies</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/economic-development-and-continuing-education/">Economic Development</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/health-sciences/">Health Sciences</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/intensiveenglishprogram/">Intensive English Program</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/online-programs/">Online/Distance Learning</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/school-of-nursing/">School of Nursing</a>
+              <a class="dropdown-item" href="https://www.chattahoocheetech.edu/technical-studies/">Technical Studies</a>
+
+
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown ml-2 mt-2">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown3"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Admissions
+              </a>
+              <div
+                class="dropdown-menu mt-0 border-0"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/chattahoochee-tech-admissions/">Admissions</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/deadmissions/">Admissions for Dual Enrollment</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/welcome-to-new-student-orientation-nso/">New Student Orientation</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/official-transcript-request/">Official Transcript</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/program-change-request/">Program Change Request</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/records-office/">Records Office</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/student-financial-services/">Financial Services</a>
+
+
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown ml-2 mt-2">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown4"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Campus Life
+              </a>
+              <div
+                class="dropdown-menu mt-0 border-0"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/wellness/">Wellness</a>
+                <a class="dropdown-item" href="https://www.chattahoocheetech.edu/campus-tour-survey/">Campus Tour</a>
+
+                <a class="dropdown-item" href="https://chattahoocheetech.presence.io/events/cal">Events</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search bar -->
+
+    <form
+      role="search"
+      method="get"
+      class="search-form"
+      action="https://www.chattahoocheetech.edu"
+      autocomplete="off"
+    >
+      <div class="container align-items-center d-none fade show" id="searchul">
+        <div class="input-group mb-3 col-auto border rounded border-dark">
+          <input
+            id="search"
+            name="s"
+            type="text"
+            class="form-control border-0 bg-transparent"
+            placeholder="Search..."
+          />
+          <div class="input-group-append">
+            <button class="btn" type="submit" value="Search">
+              <span class="bi bi-search"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- hero -->
+    <section>
+      <div class="hero-image my-3">
+        <a
+          class="hero-text"
+          href="https://www.chattahoocheetech.edu/online-application-new/"
+          >Over 50 Programs in Health, Technical, Business & Computers, Arts &
+          Sciences, and Public/Professional Services
+
+          <br /><small class="text-light"
+            >Your Path to a New Career Starts Here</small
+          ><br />
+          <button class="btn btn-outline-light mt-3">Apply Now</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="news mt-5">
+      <div class="container-fluid d-flex flex-column align-items-center p-3">
+        <div class="h1 mt-1 title1">College News</div>
+        <p class="lead secondry-text">
+          The latest stories from Chattahoochee Tech
+        </p>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row text-center mb-2">
+          <div class="col-lg-6 mx-0 pb-2">
+            <div class="card bg-dark text-white card img-fluid img-hover-zoom">
+              <a
+                href="https://www.chattahoocheetech.edu/veteran-services-coordinator-barry-munday-concludes-career-with-g-i-jobs-magazine-2021-veteran-champion-of-the-year-award/"
+              >
+                <img src="images/news 1.jpg" class="card-img" alt="news1" />
+                <div
+                  class="
+                    card-img-overlay
+                    d-flex
+                    flex-column
+                    justify-content-end
+                    mb-0
+                    pb-0
+                  "
+                >
+                  <p class="card-title img-text title1 lead">
+                    Veteran Services Coordinator Barry Munday Concludes Career
+                    with G.I. Jobs Magazine 2021 Veteran Champion of the Year
+                    Award
+                  </p>
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="col-lg-3 mx-0 pb-2">
+            <div class="col">
+              <div class="card h-100 img-hover-zoom Portrait-card">
+                <a
+                  href="https://www.chattahoocheetech.edu/chattahoochee-tech-foundation-receives-500000-from-superior-plumbing-for-vectr-center-at-marietta-campus/"
+                >
+                  <img
+                    src="images/news2.jpg"
+                    class="card-img-top"
+                    alt="news2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Chattahoochee Tech Foundation Receives $500,000 from
+                      Superior Plumbing for VECTR Center at Marietta Campus
+                    </h5>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mx-0">
+            <div class="col">
+              <div class="card h-100 img-hover-zoom Portrait-card">
+                <a
+                  href="https://www.chattahoocheetech.edu/chattahoochee-tech-announces-new-director-of-student-financial-aid/"
+                >
+                  <img
+                    src="images/news3.jpg"
+                    class="card-img-top"
+                    alt="news3"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Chattahoochee Tech Announces New Director of Student
+                      Financial Aid
+                    </h5>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center mb-2">
+          <div class="col-lg-3 mx-0 pb-2">
+            <div class="col">
+              <div class="card h-100 img-hover-zoom Portrait-card">
+                <a
+                  href="https://www.chattahoocheetech.edu/chattahoochee-tech-helping-students-persevere-with-over-5-million-in-federal-coronavirus-relief-and-response-funds/"
+                >
+                  <img
+                    src="images/news4.jpg"
+                    class="card-img-top"
+                    alt="news4"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Chattahoochee Tech Helping Students Persevere with Over $5
+                      Million in Federal Coronavirus Relief and Response Funds
+                    </h5>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mx-0 pb-2">
+            <div class="col">
+              <div class="card h-100 img-hover-zoom Portrait-card">
+                <a
+                  href="https://www.chattahoocheetech.edu/chattahoochee-tech-nursing-associate-degree-program-ranked-number-one-in-georgia/"
+                >
+                  <img
+                    src="images/news5.jpg"
+                    class="card-img-top"
+                    alt="news3"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Chattahoochee Tech Nursing Associate Degree Program Ranked
+                      Number One in Georgia
+                    </h5>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card bg-dark text-white card img-fluid img-hover-zoom">
+              <a
+                href="https://www.chattahoocheetech.edu/chattahoochee-tech-hosts-u-s-space-force-interservice-transfer-ceremony/"
+              >
+                <img src="images/new6.jpg" class="card-img" alt="news5" />
+                <div
+                  class="
+                    card-img-overlay
+                    d-flex
+                    flex-column
+                    justify-content-end
+                    mb-0
+                    pb-0
+                  "
+                >
+                  <p class="card-title img-text title1 lead">
+                    Chattahoochee Tech Hosts U.S. Space Force Interservice
+                    Transfer Ceremony
+                  </p>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-4 mt-4">
+          <a href="https://www.chattahoocheetech.edu/author/amashburn/">
+            <button class="btn btn-lg btn-color">
+              More Chattahoochee Tech News
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+
+    <section class="events">
+      <div class="container-fluid">
+        <div class="d-flex flex-column align-items-center">
+          <div class="h1 mb-3 mt-4 title1">College Events</div>
+          <p class="lead secondry-text">What’s happening on campus</p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/event1.jpg" class="card-img-top" alt="event1" />
+              <div class="card-body">
+                <h5 class="card-title">SEP 06</h5>
+                <p class="card-text lead">Labor day, college closed</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/event2.png" class="card-img-top" alt="event2" />
+              <div class="card-body">
+                <h5 class="card-title">AUG 16</h5>
+                <p class="card-text lead">Fall semester begins</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/event3.jpg" class="card-img-top" alt="event3" />
+              <div class="card-body">
+                <h5 class="card-title">JUL 31</h5>
+                <p class="card-text lead">Summer semester ends</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/even4.webp" class="card-img-top" alt="event4" />
+              <div class="card-body">
+                <h5 class="card-title">JUL 30</h5>
+                <p class="card-text lead">
+                  Final application deadline for Fall semester
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center pb-3">
+          <a
+            href="https://scheduling.chattahoocheetech.edu/MasterCalendar/MasterCalendar.aspx"
+          >
+            <button class="btn btn-lg btn-color">
+              More Chattahoochee Tech Events
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics -->
+
+    <section class="academics">
+      <div class="container-fluid">
+        <div class="d-flex flex-column align-items-center">
+          <div class="h1 mb-3 mt-4 title2">Academics</div>
+          <p class="lead third-text">
+            Preparing students to make meaningful contributions to society
+          </p>
+        </div>
+        <div class="card-columns h-100">
+          <div class="card h-100 img-hover-zoom">
+            <a
+              href="https://www.chattahoocheetech.edu/business-and-professional-studies/"
+            >
+              <img src="images/add1.png" class="card-img-top" alt="add1" />
+              <div class="card-body h-100">
+                <h4 class="card-title">Business and Professional</h4>
+                <p class="lead card-text">
+                  Gain real-world job skills in a variety of programs that help
+                  build a better community while serving local workforce needs.
+                </p>
+              </div></a
+            >
+          </div>
+          <div class="card h-100 img-hover-zoom">
+            <a
+              href="https://www.chattahoocheetech.edu/computer-information-systems-technology/"
+            >
+              <img src="images/add2.png" class="card-img-top" alt="add2" />
+              <div class="h-100 card-body">
+                <h4 class="card-title">Computers & Engineering</h4>
+                <p class="lead card-text">
+                  Secure the essential skills you need in the growing fields of
+                  computer information systems and electrical and computer
+                  engineering technologies.
+                </p>
+              </div></a
+            >
+          </div>
+          <div class="card h-100 img-hover-zoom">
+            <a
+              href="https://www.chattahoocheetech.edu/digital-media-technologies-studies/"
+            >
+              <img src="images/add3.png" class="card-img-top" alt="add3" />
+              <div class="h-100 card-body">
+                <h4 class="card-title">Digital Media</h4>
+                <p class="lead card-text">
+                  In today’s skilled workforce, there is an increasingly high
+                  demand for digital content creation skills. Learn how to
+                  design and implement content using the most current
+                  technologies for various digital media.
+                </p>
+              </div></a
+            >
+          </div>
+          <div class="card h-100 img-hover-zoom">
+            <a href="https://www.chattahoocheetech.edu/health-studies/">
+              <img src="images/add4.png" class="card-img-top" alt="add4" />
+              <div class="h-100 card-body">
+                <h4 class="card-title">Health</h4>
+                <p class="lead card-text">
+                  Prepare for a rewarding, high-demand career in a
+                  health-related setting, and make a real difference in the
+                  lives of others. Train with well-established community
+                  partners for real-world, clinical experience.
+                </p>
+              </div></a
+            >
+          </div>
+          <div class="card h-100 img-hover-zoom">
+            <a
+              href="https://www.chattahoocheetech.edu/computer-information-systems-technology/"
+            >
+              <img src="images/add5.png" class="card-img-top" alt="add5" />
+              <div class="card-body h-100">
+                <h4 class="card-title">Technical</h4>
+                <p class="lead card-text">
+                  Become a highly-skilled professional who is needed now more
+                  than ever by local industry in building, manufacturing,
+                  engineering, or transportation. Programs of study prepare you
+                  for a high-demand, high-tech career in these fields.
+                </p>
+              </div></a
+            >
+          </div>
+
+          <div class="card h-100 img-hover-zoom">
+            <a href="https://www.chattahoocheetech.edu/arts-studies/">
+              <img src="images/add6.jpg" class="card-img-top" alt="add6" />
+              <div class="card-body h-100">
+                <h4 class="card-title">Arts & Sciences</h4>
+                <p class="lead card-text">
+                  An AAS in Interdisciplinary Studies allows students to
+                  customize their program based on academic and professional
+                  goals.
+                </p>
+              </div></a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center pb-3">
+          <a
+            href="https://www.chattahoocheetech.edu/wp-content/uploads/2020/11/CTC-Career-Guide-2020.pdf"
+          >
+            <button class="btn btn-lg btn-color">
+              More ChattahoocheeTech Academics
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- president quote -->
+    <section>
+      <div class="bg-image">
+        <div class="container-fluid">
+          <div class="bg-text">
+            <img
+              class="rounded-circle mb-3 img-fluid pres"
+              src="images/president.jpg"
+              alt="president"
+            />
+            <h3 class="text-light lead">
+              "At Chattahoochee Tech, you will find a collegiate atmosphere that
+              fosters learning, creative thinking, and personal character
+              development. Ideas are exchanged, friendships are formed, and
+              minds are expanded as our students interact in class and at a wide
+              variety of Campus Life functions. It’s easy to learn and grow here
+              at Chattahoochee Tech."
+            </h3>
+            <p class="text-light font-weight-bold lead mb-0 pb-0">
+              Ron Newcomb, Ed.D.
+            </p>
+            <p class="mt-0 pt-0 text-light font-italic">
+              Chattahoochee Tech President
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- social media nav -->
+    <nav class="navbar connect">
+      <div class="navbar-brand text-light">
+        Stay up to date on the latest from Chattahoochee Tech
+      </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/ChattTech/" class="nav-link"
+            ><span class="bi bi-facebook text-light"></span
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://twitter.com/chattech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            class="nav-link"
+            ><span class="bi bi-twitter text-light"></span
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://www.instagram.com/chattahoocheetech/?hl=en"
+            class="nav-link"
+            ><span class="bi bi-instagram text-light"></span
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://www.youtube.com/user/ChattahoocheeTech"
+            class="nav-link"
+            ><span class="bi bi-youtube text-light"></span
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://www.linkedin.com/school/chattahoochee-technical-college/"
+            class="nav-link"
+            ><span class="bi bi-linkedin text-light"></span
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Resources -->
+    <section class="resources">
+      <div class="container row row-cols-2 row-cols-lg-5 pt-5">
+        <div class="col p-3">
+          <p>
+            <a
+              href="https://scheduling.chattahoocheetech.edu/MasterCalendar/MasterCalendar.aspx"
+              >Academic Calendar</a
+            >
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/about-us/">About Us</a>
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/campus-locations/"
+              >Campus Locations</a
+            >
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/faculty-staff/"
+              >Faculty &amp; Staff</a
+            >
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/privacy-statement/"
+              >Privacy Statement</a
+            >
+          </p>
+          <p class="">
+            980 South Cobb Drive,<br />
+            Marietta, GA 30060<br />
+            <a href="tel:770-528-4545">770-528-4545</a>
+          </p>
+        </div>
+        <div class="col p-3">
+          <p class="lead">Equal Opportunity</p>
+
+          <p>
+            <a
+              href="https://www.chattahoocheetech.edu/ada-accessibility-current-student/"
+              >ADA Compliance Statement</a
+            >
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/title-ix-equity/"
+              >Title IX Equity</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.chattahoocheetech.edu/student-consumer-information/"
+              >Student Consumer Information</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.chattahoocheetech.edu/wp-content/uploads/2020/04/human-trafficking-post-9-13-13.pdf"
+              >Human Trafficking</a
+            >
+          </p>
+        </div>
+
+        <div class="col p-3">
+          <p class="lead">Contact Us</p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/ask-swoop/">Ask Swoop</a>
+          </p>
+          <p>
+            <a href="https://www.bkstr.com/chattahoocheetechstore">Bookstore</a>
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/college-directory/"
+              >College Directory</a
+            >
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/concerns-and-complaints/"
+              >Concerns &amp; Complaints</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://ctcforms.chattahoocheetech.edu/covid/selfreport.php"
+              >COVID-19 Self Reporting Form</a
+            >
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/special-event-rental/"
+              >Facility Rentals</a
+            >
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/jobs-at-ctc/"
+              >Jobs &amp; Careers</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fthankaninstructor.chattahoocheetech.edu%2F&amp;data=04%7C01%7Ccameron.meier%40chattahoocheetech.edu%7C630ed15cfb01454e2bc508d9033c9d04%7C74981b26ccc14e7eafc6720c4c6b0050%7C1%7C0%7C637544381124401874%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=qkzUvsoehk3G7lpZudOX5ydzMdC%2Fe4lnwKUL5s6chFU%3D&amp;reserved=0"
+              >Thank An Instructor</a
+            >
+          </p>
+        </div>
+        <div class="col p-3"> <p class="lead">Helpful Links</p>
+          <p><a href="https://www.chattahoocheetech.edu/wp-content/uploads/2020/11/CTC-Career-Guide-2020.pdf">Career Guide</a></p>
+            <p class=""><a href="https://chattahoocheetech.smartcatalogiq.com/2021-2022/General-Catalog">College Catalog 2021-2022</a></p>
+            <p class=""><a href="https://www.chattahoocheetech.edu/class-schedule/">Class Schedule</a></p>
+            <p class=""><a href="https://www.chattahoocheetech.edu/learning-support/">Learning Support</a></p>
+            <p class=""><a href="https://www.chattahoocheetech.edu/service-learning/">Service Learning</a></p>
+            <p><a href="https://chattahoocheetech.okta.com/">Student & Faculty Login</a></p>
+
+            
+        </div>
+        <div class="col p-3">
+          <p class="lead">Visit Us</p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/office-hours/"
+              >Office Hours</a
+            >
+          </p>
+          <p>
+            <a href="https://www.chattahoocheetech.edu/visit-us/"
+              >Schedule a Campus Visit</a
+            >
+          </p>
+
+          <p>
+            <img
+              class="p-3"
+              src="https://www.chattahoocheetech.edu/wp-content/uploads/2021/03/TCSGLogoFooter-white.png"
+              alt="TCSG Logo"
+            />
+          </p>
+          <p>A Unit of the Technical College System of Georgia</p>
+          <p>An Equal Opportunity Institution</p>
+        </div>
+        
+       
+      </div>
+
+      <div class="container-fluid text-center">
+        <img class="p-3" src="images/CTC-footer-logo.png" alt="footer logo" />
+
+        <p class="ml-auto p-5 d-inline-block">
+          Copyright © 2021<br />
+          All Rights Reserved
+        </p>
+      </div>
+    </section>
+
+    <div class="table text-light mb-0 pt-5">
+      <div class="container">
+        <h2 class="text-light">Bootstrap classes used</h2>
+
+        <table class="table text-light table-bordered table-sm">
+          <thead>
+            <tr>
+              <th>Module 1</th>
+              <th>Module 2</th>
+              <th>Module 3</th>
+              <th>Module 4</th>
+              <th>Module 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bootstrap CDN</td>
+              <td>Grids</td>
+              <td>Responsive images</td>
+              <td>Cards</td>
+              <td>No template used</td>
+            </tr>
+            <tr>
+              <td>container</td>
+              <td>Responsive text</td>
+              <td>Navbar</td>
+              <td>Inputs</td>
+              <td>No template used</td>
+            </tr>
+            <tr>
+              <td>container-fluid</td>
+              <td>Responsive tables</td>
+              <td>Dropdown</td>
+              <td>Aligning columns</td>
+              <td>No template used</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Buttons</td>
+              <td>Forms</td>
+              <td>No template used</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Collapse</td>
+              <td></td>
+              <td>No template used</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="p-3 mb-0 text-light">
+          Other bootstrap classes used (not in Modules): Flex classes, margin
+          and padding classes and bootstrap icon classes.
+        </p>
+      </div>
+    </div>
+
+   
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Search toggle -->
+    <script>
+      $("#searchForm").on("shown.bs.collapse", function () {
+        // focus input on collapse
+        $("#search").focus();
+      });
+
+      function toggler(searchul) {
+        $("#searchul").toggleClass("d-none");
+        $("#search").focus();
+      }
+    </script>
+  </body>
+</html>
